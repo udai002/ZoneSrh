@@ -30,7 +30,7 @@ const Navbar = ()=>{
 
 
         {/* this is sideNavbar */}
-        {open?<motion.div initial={{x:-250}} animate={{x:0}} className="fixed left-0 w-[240px] bg-white h-[100vh] flex-col flex justify-between transition-transform transform translate-x-400 ease-in-out duration-300">
+        {open?<motion.div initial={{x:-250}} animate={{x:0}} className="fixed left-0 w-[240px] bg-white h-[100vh] flex-col flex justify-between transition-transform transform translate-x-400 ease-in-out duration-300 overflow-auto">
             <div className="flex flex-row justify-end fixed right-1 " onClick={()=>{setOpen(false)}}>
             <IoCloseCircle className="text-3xl m-4" />
             </div>
